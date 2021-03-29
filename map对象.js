@@ -1,4 +1,5 @@
 //语法：mapObj = new Map()，其中map对象的键值可以为任意类型
+//参考：https://blog.csdn.net/houwanle/article/details/108396826?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161701488016780262574827%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=161701488016780262574827&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-5-108396826.first_rank_v2_pc_rank_v29&utm_term=js%E4%B8%ADmap
 /*clear
     从映射中移除所有元素。
 delete
@@ -26,3 +27,8 @@ m.set({x:1}, 3);
 m.forEach(function (item, key, mapObj) {
     console.log(item.toString() + "\n");
 });
+let m = new Map();
+m.set('x', 1); // 添加元素
+m.delete('y'); // 删除指定元素
+m.has('x'); // true 是否存在x
+m.get('x'); // 1 取值

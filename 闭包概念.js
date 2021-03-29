@@ -3,24 +3,24 @@
 */
 function createCompareFunction(propername) {
     //返回值中的匿名函数就是一个闭包，可调用外部函数中的propername（作用域链原理）
-  return function (obj1, obj2) {
-    var value1 = obj1[propername];
-    var value2 = obj2[propername];
-    if (value1 < value2) {
-      return -1;
-    } else if (value1 > value2) {
-      return 1;
-    } else {
-      return 0;
-    }
-  };
+    return function (obj1, obj2) {
+        var value1 = obj1[propername];
+        var value2 = obj2[propername];
+        if (value1 < value2) {
+            return -1;
+        } else if (value1 > value2) {
+            return 1;
+        } else {
+            return 0;
+        }
+    };
 }
 var value1 = obj1[propername];
 var value2 = obj2[propername];
 if (value1 < value2) {
-  return -1;
+    return -1;
 } else if (value1 > value2) {
-  return 1;
+    return 1;
 } else {
-  return 0;
+    return 0;
 }
